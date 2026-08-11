@@ -63,6 +63,10 @@ Central Time (CT) — all scheduling and reminders should use CT
 - GitHub repo: git@github.com:willcoatney/tags.git
 - Deploy key (public): ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPU6X/PuiJzvqTrVREiZu6J9bNcEzaoML0HEMvgOdxUq atlas-tags-deploy
 - Deploy key (private): /data/.openclaw/workspace/.ssh/tags_deploy
+- Atlas workspace repo: git@github.com:willcoatney/openclaw-tags.git
+- Workspace deploy key (public): ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOt790ZM4rqEU37hwINJsoOFzVNvtvfpwjsCCznyvhQq atlas-openclaw-workspace
+- Workspace deploy key (private): /data/.openclaw/workspace/.ssh/openclaw_workspace_deploy
+- Git push command: GIT_SSH_COMMAND="ssh -i /data/.openclaw/workspace/.ssh/openclaw_workspace_deploy -o StrictHostKeyChecking=no" git push
 
 ## Regional Manager Feature (shipped 2026-07-15)
 
