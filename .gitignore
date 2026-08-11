@@ -1,0 +1,22 @@
+# Sensitive keys — never commit
+.ssh/
+
+# App has its own repo
+tags-app/
+
+# OpenClaw internal runtime config
+.openclaw/
+
+# Clawhub cache
+.clawhub/
+
+# Rendered output files
+renders/
+
+# Skills (large, installed separately)
+skills/
+
+# Local env files
+*.env
+*.env.local
+.env*
