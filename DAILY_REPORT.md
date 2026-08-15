@@ -35,8 +35,8 @@ Query Supabase for open projects with no bids after 48 hours.
 
 ```
 curl -s \
-  -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5NTQ5MDAsImV4cCI6MjA5MzUzMDkwMH0.eygHJ5H6ICzcQw950eFzyLS_SQy3gECbCd8XmHUbKIs" \
-  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5NTQ5MDAsImV4cCI6MjA5MzUzMDkwMH0.eygHJ5H6ICzcQw950eFzyLS_SQy3gECbCd8XmHUbKIs" \
+  -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzk1NDkwMCwiZXhwIjoyMDkzNTMwOTAwfQ.ede0QSrJS7K6Oq-PJip6SgkNxLd9aYs0ChP_uLps4gM" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzk1NDkwMCwiZXhwIjoyMDkzNTMwOTAwfQ.ede0QSrJS7K6Oq-PJip6SgkNxLd9aYs0ChP_uLps4gM" \
   "https://sdjhnjuyfgwnjubzsfid.supabase.co/rest/v1/projects?select=id,title,created_at,status&status=eq.open"
 ```
 
@@ -51,8 +51,8 @@ Cross-reference against bids table. Flag any project with status=open, created m
 
 ```
 curl -s \
-  -H "apikey: [anon key]" \
-  -H "Authorization: Bearer [anon key]" \
+  -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzk1NDkwMCwiZXhwIjoyMDkzNTMwOTAwfQ.ede0QSrJS7K6Oq-PJip6SgkNxLd9aYs0ChP_uLps4gM" \
+  -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNkamhuanV5Zmd3bmp1YnpzZmlkIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzk1NDkwMCwiZXhwIjoyMDkzNTMwOTAwfQ.ede0QSrJS7K6Oq-PJip6SgkNxLd9aYs0ChP_uLps4gM" \
   "https://sdjhnjuyfgwnjubzsfid.supabase.co/rest/v1/contractor_profiles?select=id,company_name,created_at&approval_status=eq.pending"
 ```
 
