@@ -96,6 +96,10 @@ Review this standing list of known gaps. Flag if a gap has been open > 14 days a
 
 ---
 
+## Destination
+
+Send daily reports to the TAGS Telegram group chat (ID: -1003871141582), not to Will's direct message thread.
+
 ## Alert Format
 
 When sending the daily report, use this format:

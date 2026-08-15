@@ -53,7 +53,7 @@ Central Time (CT) — all scheduling and reminders should use CT
 ## Infrastructure
 
 - OpenClaw instance: openclaw-tags container on srv1522624.hstgr.cloud
-- Telegram group: TAGS (chat ID: -1003871141582, upgraded from -5272805541 supergroup migration 2026-08-11)
+- Telegram group: TAGS (chat ID: -1003871141582, upgraded from -5272805541 supergroup migration 2026-08-11) — daily reports post here
 - Bot: @Mr_Macro_bot (rename before showing partners)
 - Anthropic API: TAGS org (separate from Will's personal account)
 - Supabase project URL: https://sdjhnjuyfgwnjubzsfid.supabase.co
@@ -101,6 +101,14 @@ Central Time (CT) — all scheduling and reminders should use CT
 - Test key: in tags-app/.env.local
 - PM price ID: price_1U2xvWAz0jKhTU5aPgQaXueb ($50/month)
 - Contractor price ID: price_1U2xvXAz0jKhTU5aF3GLBvro ($100/year)
+
+## Contractor Payment Processing (confirmed shipped)
+
+- 1.5% platform fee charged off-session at bid award via `chargePlatformFee()` in `src/lib/platform-fee.ts`
+- Soft gate: award completes even if card declines; contractor gets 48h to resolve
+- Webhook handler: `src/app/api/stripe/webhook/route.ts` handles subscription lifecycle
+- Fee status tracked on bids table: `platform_fee_status` (charged / failed / pending)
+- SMS + email notifications on charge success, decline, and no-card-on-file
 
 ## Open Items
 
